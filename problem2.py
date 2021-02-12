@@ -23,3 +23,18 @@ Enter a number: 4
 Enter another number: 25
 4 is not a factor of 25
 """
+
+x=int(input('Enter an integer: '))
+y=int(input('Enter another integer: '))
+
+if (x>y)==True:
+    num1=x
+    num2=y
+else:
+    num1=y
+    num2=x
+value=num1%num2
+if value==0:
+    print(str(num2)+' is a factor of '+str(num1))
+else:
+    print(str(num2)+' is not a factor of '+str(num1))
